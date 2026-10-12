@@ -1,28 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">  
-    <link rel="stylesheet" href="">
     <link rel="shortcut icon" href="" type="image/x-icon">
     <title>FinUP | Gestão Financeira</title>
 </head>
 <body>
-    <nav>
-        <div id="menulogo">
-            <img src="" alt="" id="logo">
+    <header class="container">
+        <a href="#index.html">
+            <img src="" alt="">
+        </a>
+
+        <div class="d-flex align-items-center gap-1">
+            <span id="saldoDisponivel" class="text-secondary"> Saldo Financeiro: </span>
+            <span id="valorSaldo" class="text-secondary text-dark fw-medium">R$ 5.345,92</span>
         </div>
-        <div id="Saldo">
-            <ul>
-                <li>Saldo Disponivel</li>
-                <li></li>
-            </ul>
-        </div>
-    </nav>
-    <body>
-        
-    </body>
+    </header>
+
+    <div class="row g-4" id="Grade">
+      <div class="col-12 col-xl-6">
+        <div class="card card-chart"><div class="card-body">
+          <h6 class="card-title text-secondary">Evolução do saldo</h6>
+          <div class="chart-box"><canvas id="chartSaldo"></canvas></div>
+        </div></div>
+      </div>
+
+      <div class="col-12 col-xl-6">
+        <div class="card card-chart"><div class="card-body">
+          <h6 class="card-title text-secondary">Despesas por categoria</h6>
+          <div class="chart-box" style="display: flex; width: 500px; justify-content: center; align-items: center;"><canvas id="chartCategorias"></canvas></div>
+        </div></div>
+      </div>
+    </div>
+    
 </body>
+
+    <script src="js/script.js"></script>
+
 </html>
