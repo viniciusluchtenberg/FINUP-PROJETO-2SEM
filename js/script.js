@@ -62,7 +62,8 @@ new Chart(ctx1, {
         responsive: true,
         plugins: {
             legend: {
-                position: 'right'
+                display: false,
+                position: 'left',
             }
         }
     },

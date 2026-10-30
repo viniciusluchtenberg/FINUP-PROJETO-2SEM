@@ -20,9 +20,33 @@ header {
 }
 .chart-box {
     position: relative;
+    text-align: center;
     width: 100%;
     height: 300px;
 }
 .chart-box canvas {
     max-width: 100%;
+}
+#menuLateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+}
+.item-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 22px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
 }
