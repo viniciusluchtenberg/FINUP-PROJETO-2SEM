@@ -15,13 +15,14 @@ const dados = {
     { "nome": "Notebook novo", "percentual": 85 }
   ],
   "entradas": [1800, 2800, 1400, 4000, 3500, 3500],
-  "despesas": [-1400, -3050, -250, -3400, -2200, 3500]
+  "despesas": [-1400, -3050, -250, -3400, -2200, -3500]
 }
 
 const ctx = document.getElementById('chartSaldo')
 const ctx1 = document.getElementById('chartCategorias')  
 const ctx2 = document.getElementById('chartEntradas')
 const ctx3 = document.getElementById('chartEconomia')
+Chart.defaults.maintainAspectRatio = false;
 
 new Chart(ctx, {
     type: 'line',
