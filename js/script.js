@@ -1,21 +1,44 @@
 const dados = {
-  "saldo": 5345.92,
-  "meses": ["Mai", "Jun", "Jul", "Ago", "Set", "Out"],
-  "evolucaoSaldo": [2800, 3200, 2950, 4100, 4700, 6000],
-  "categorias": [
-    { "nome": "Moradia", "valor": 1500 },
-    { "nome": "Alimentação", "valor": 900 },
-    { "nome": "Transporte", "valor": 450 },
-    { "nome": "Lazer", "valor": 300 },
-    { "nome": "Outros", "valor": 250 }
-  ],
-  "metas": [
-    { "nome": "Reserva de emergência", "percentual": 65 },
-    { "nome": "Viagem", "percentual": 40 },
-    { "nome": "Notebook novo", "percentual": 85 }
-  ],
-  "entradas": [1800, 2800, 1400, 4000, 3500, 3500],
-  "despesas": [-1400, -3050, -250, -3400, -2200, -3500]
+    "meses": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"],
+    "janeiro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00},
+            { "nome": "valeAlimentacao", "valor": 450.00},   
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00},
+            { "nome": "Alimentação", "valor": 400.00},
+            { "nome": "Transporte", "valor": 200.00},
+            { "nome": "Energia", "valor": 300.00},
+            { "nome": "Saneamento", "valor": 150.00},
+        ]
+    },        
+    "fevereiro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00},
+            { "nome": "valeAlimentacao", "valor": 450.00},   
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00},
+            { "nome": "Alimentação", "valor": 300.00},
+            { "nome": "Transporte", "valor": 150.00},
+            { "nome": "Energia", "valor": 450.45},
+            { "nome": "Saneamento", "valor": 100.09},
+        ]
+    },        
+    "marco": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00},
+            { "nome": "valeAlimentacao", "valor": 450.00},   
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00},
+            { "nome": "Alimentação", "valor": 450.00},
+            { "nome": "Transporte", "valor": 210.00},
+            { "nome": "Energia", "valor": 275.80},
+            { "nome": "Saneamento", "valor": 125.50},
+        ]
+    },        
 }
 
 const ctx = document.getElementById('chartSaldo')

@@ -1,0 +1,146 @@
+{
+    "meses": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov"],
+    "janeiro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 400.00 },
+            { "nome": "Transporte", "valor": 200.00 },
+            { "nome": "Energia", "valor": 300.00 },
+            { "nome": "Saneamento", "valor": 150.00 }
+        ]
+    },
+    "fevereiro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 300.00 },
+            { "nome": "Transporte", "valor": 150.00 },
+            { "nome": "Energia", "valor": 450.45 },
+            { "nome": "Saneamento", "valor": 100.09 }
+        ]
+    },
+    "marco": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 450.00 },
+            { "nome": "Transporte", "valor": 210.00 },
+            { "nome": "Energia", "valor": 275.80 },
+            { "nome": "Saneamento", "valor": 125.50 }
+        ]
+    },
+    "abril": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 380.00 },
+            { "nome": "Transporte", "valor": 180.00 },
+            { "nome": "Energia", "valor": 320.50 },
+            { "nome": "Saneamento", "valor": 110.00 }
+        ]
+    },
+    "maio": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 420.00 },
+            { "nome": "Transporte", "valor": 230.00 },
+            { "nome": "Energia", "valor": 290.75 },
+            { "nome": "Saneamento", "valor": 135.00 }
+        ]
+    },
+    "junho": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 350.00 },
+            { "nome": "Transporte", "valor": 190.00 },
+            { "nome": "Energia", "valor": 410.80 },
+            { "nome": "Saneamento", "valor": 120.00 }
+        ]
+    },
+    "julho": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 480.00 },
+            { "nome": "Transporte", "valor": 250.00 },
+            { "nome": "Energia", "valor": 340.25 },
+            { "nome": "Saneamento", "valor": 145.00 }
+        ]
+    },
+    "agosto": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 390.00 },
+            { "nome": "Transporte", "valor": 170.00 },
+            { "nome": "Energia", "valor": 280.90 },
+            { "nome": "Saneamento", "valor": 115.00 }
+        ]
+    },
+    "setembro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 440.00 },
+            { "nome": "Transporte", "valor": 220.00 },
+            { "nome": "Energia", "valor": 390.60 },
+            { "nome": "Saneamento", "valor": 130.00 }
+        ]
+    },
+    "outubro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 370.00 },
+            { "nome": "Transporte", "valor": 200.00 },
+            { "nome": "Energia", "valor": 310.45 },
+            { "nome": "Saneamento", "valor": 105.00 }
+        ]
+    },
+    "novembro": {
+        "receitas": [
+            { "nome": "salario", "valor": 3500.00 },
+            { "nome": "valeAlimentacao", "valor": 450.00 }
+        ],
+        "despesas": [
+            { "nome": "Aluguel", "valor": 1000.00 },
+            { "nome": "Alimentação", "valor": 460.00 },
+            { "nome": "Transporte", "valor": 240.00 },
+            { "nome": "Energia", "valor": 430.80 },
+            { "nome": "Saneamento", "valor": 140.00 }
+        ]
+    }
+}
