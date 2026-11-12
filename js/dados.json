@@ -1,146 +1,433 @@
 {
-    "meses": ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov"],
+    "meses": [
+        "Jan",
+        "Fev",
+        "Mar",
+        "Abr",
+        "Mai",
+        "Jun",
+        "Jul",
+        "Ago",
+        "Set",
+        "Out",
+        "Nov"
+    ],
     "janeiro": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 400.00 },
-            { "nome": "Transporte", "valor": 200.00 },
-            { "nome": "Energia", "valor": 300.00 },
-            { "nome": "Saneamento", "valor": 150.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 960.21
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1291.93
+            },
+            {
+                "nome": "Transporte",
+                "valor": 449.68
+            },
+            {
+                "nome": "Energia",
+                "valor": 350.24
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 95.98
+            }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "08/11/2026",
+                "valor": 200.0
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "05/11/2026",
+                "valor": 200.0
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "10/11/2026",
+                "valor": 150.0
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "09/11/2026",
+                "valor": 50.0
+            },
+            {
+                "tipo": "Aluguel",
+                "lugar": "Vinicius Luchtenberg Pagnussat",
+                "Data": "29/10/2026",
+                "valor": 1000.0
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "30/10/2026",
+                "valor": 300.0
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "31/10/2026",
+                "valor": 150.0
+            }
         ]
     },
     "fevereiro": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 300.00 },
-            { "nome": "Transporte", "valor": 150.00 },
-            { "nome": "Energia", "valor": 450.45 },
-            { "nome": "Saneamento", "valor": 100.09 }
+            {
+                "nome": "Aluguel",
+                "valor": 959.67
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 2243.97
+            },
+            {
+                "nome": "Transporte",
+                "valor": 549.79
+            },
+            {
+                "nome": "Energia",
+                "valor": 364.39
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 103.26
+            }
         ]
     },
     "marco": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 450.00 },
-            { "nome": "Transporte", "valor": 210.00 },
-            { "nome": "Energia", "valor": 275.80 },
-            { "nome": "Saneamento", "valor": 125.50 }
+            {
+                "nome": "Aluguel",
+                "valor": 1056.2
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1547.0
+            },
+            {
+                "nome": "Transporte",
+                "valor": 620.05
+            },
+            {
+                "nome": "Energia",
+                "valor": 267.59
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 164.77
+            }
         ]
     },
     "abril": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 380.00 },
-            { "nome": "Transporte", "valor": 180.00 },
-            { "nome": "Energia", "valor": 320.50 },
-            { "nome": "Saneamento", "valor": 110.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1026.36
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 2372.65
+            },
+            {
+                "nome": "Transporte",
+                "valor": 396.67
+            },
+            {
+                "nome": "Energia",
+                "valor": 500.69
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 96.3
+            }
         ]
     },
     "maio": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 420.00 },
-            { "nome": "Transporte", "valor": 230.00 },
-            { "nome": "Energia", "valor": 290.75 },
-            { "nome": "Saneamento", "valor": 135.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 979.07
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1133.81
+            },
+            {
+                "nome": "Transporte",
+                "valor": 652.07
+            },
+            {
+                "nome": "Energia",
+                "valor": 414.27
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 99.44
+            }
         ]
     },
     "junho": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 350.00 },
-            { "nome": "Transporte", "valor": 190.00 },
-            { "nome": "Energia", "valor": 410.80 },
-            { "nome": "Saneamento", "valor": 120.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1035.47
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1754.75
+            },
+            {
+                "nome": "Transporte",
+                "valor": 678.51
+            },
+            {
+                "nome": "Energia",
+                "valor": 432.18
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 153.47
+            }
         ]
     },
     "julho": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 480.00 },
-            { "nome": "Transporte", "valor": 250.00 },
-            { "nome": "Energia", "valor": 340.25 },
-            { "nome": "Saneamento", "valor": 145.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1061.27
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 2353.83
+            },
+            {
+                "nome": "Transporte",
+                "valor": 561.65
+            },
+            {
+                "nome": "Energia",
+                "valor": 426.2
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 120.32
+            }
         ]
     },
     "agosto": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 390.00 },
-            { "nome": "Transporte", "valor": 170.00 },
-            { "nome": "Energia", "valor": 280.90 },
-            { "nome": "Saneamento", "valor": 115.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1056.49
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 992.6
+            },
+            {
+                "nome": "Transporte",
+                "valor": 470.95
+            },
+            {
+                "nome": "Energia",
+                "valor": 531.31
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 107.55
+            }
         ]
     },
     "setembro": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 440.00 },
-            { "nome": "Transporte", "valor": 220.00 },
-            { "nome": "Energia", "valor": 390.60 },
-            { "nome": "Saneamento", "valor": 130.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1016.2
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1732.03
+            },
+            {
+                "nome": "Transporte",
+                "valor": 525.72
+            },
+            {
+                "nome": "Energia",
+                "valor": 546.22
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 123.27
+            }
         ]
     },
     "outubro": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 370.00 },
-            { "nome": "Transporte", "valor": 200.00 },
-            { "nome": "Energia", "valor": 310.45 },
-            { "nome": "Saneamento", "valor": 105.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 1013.48
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 2149.0
+            },
+            {
+                "nome": "Transporte",
+                "valor": 744.81
+            },
+            {
+                "nome": "Energia",
+                "valor": 364.52
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 95.22
+            }
         ]
     },
     "novembro": {
         "receitas": [
-            { "nome": "salario", "valor": 3500.00 },
-            { "nome": "valeAlimentacao", "valor": 450.00 }
+            {
+                "nome": "Salário",
+                "valor": 3500.0
+            },
+            {
+                "nome": "Vale-Alimentação",
+                "valor": 450.0
+            }
         ],
         "despesas": [
-            { "nome": "Aluguel", "valor": 1000.00 },
-            { "nome": "Alimentação", "valor": 460.00 },
-            { "nome": "Transporte", "valor": 240.00 },
-            { "nome": "Energia", "valor": 430.80 },
-            { "nome": "Saneamento", "valor": 140.00 }
+            {
+                "nome": "Aluguel",
+                "valor": 955.56
+            },
+            {
+                "nome": "Alimentação",
+                "valor": 1438.65
+            },
+            {
+                "nome": "Transporte",
+                "valor": 484.71
+            },
+            {
+                "nome": "Energia",
+                "valor": 519.71
+            },
+            {
+                "nome": "Saneamento",
+                "valor": 146.24
+            }
         ]
     }
 }
