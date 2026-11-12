@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <title>FinUP | Gestão Financeira</title>
+</head>
+
+<body>
+
+    <aside id="menuLateral" class="d-flex flex-column align-items-center">
+
+        <nav class="nav flex-column align-items-center gap-3">
+
+            <a href="index.html" class="item-menu ativo" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Dashboard">
+                <i class="bi bi-house"></i>
+            </a>
+
+            <a href="transacoes.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Transações">
+                <i class="bi bi-arrow-left-right"></i>
+            </a>
+
+            <a href="receitas.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Receitas">
+                <i class="bi bi-graph-up-arrow"></i>
+            </a>
+
+            <a href="despesas.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
+                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Despesas">
+                <i class="bi bi-graph-down-arrow"></i>
+            </a>
+
+        </nav>
+
+    </aside>
+
+    <main class="container-fluid main-content">
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h3 class="fw-bold mb-1">Despesas</h3>
+                <p class="text-secondary mb-0">
+                    Acompanhe e gerencie seus gastos.
+                </p>
+            </div>
+
+            <div class="text-end">
+                <h4 class="text-secondary">Saldo Disponível:</h4>
+                <span id="valorSaldo" class="text-secondary text-dark fw-medium"></span>
+            </div>
+
+        </div>
+
+        <div class="row g-3 mb-4">
+
+            <div class="col-6 col-lg-3">
+                <div class="card border-0 shadow-sm p-3">
+                    <span class="card-title text-secondary">Total de despesas</span>
+                    <h4 class="fw-bold mt-2">R$ 1.254,08</h4>
+                    <span class="text-secondary small">Neste mês</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card border-0 shadow-sm p-3">
+                    <span class="card-title text-secondary">Despesas fixas</span>
+                    <h4 class="fw-bold mt-2">R$ 750,00</h4>
+                    <span class="card-title text-secondary">Contas recorrentes</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card border-0 shadow-sm p-3">
+                    <span class="text-secondary small">Despesas variáveis</span>
+                    <h4 class="fw-bold mt-2">R$ 504,08</h4>
+                    <span class="text-secondary small">Gastos do dia a dia</span>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card border-0 shadow-sm p-3">
+                    <span class="text-secondary small">Média diária</span>
+                    <h4 class="fw-bold mt-2">R$ 40,45</h4>
+                    <span class="text-secondary small">Gasto por dia</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row g-3 mb-4">
+
+            <div class="col-12 col-lg-5">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <h6 class="card-title text-secondary">Despesas por categoria</h6>
+                    <div class="chart-box">
+                        <canvas id="graficoCategorias"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-7">
+                <div class="card border-0 shadow-sm p-3 h-100">
+                    <h6 class="card-title text-secondary">Evolução das despesas</h6>
+                    <div class="chart-box">
+                        <canvas id="graficoEvolucao"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card border-0 shadow-sm p-3">
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h6 class="fw-bold mb-0">Últimas despesas</h6>
+
+                <button class="btn btn-outline-dark btn-sm">
+                    Ver todas
+                </button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table align-middle">
+                    <thead>
+                        <tr class="text-secondary">
+                            <th>Descrição</th>
+                            <th>Categoria</th>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th class="text-end">Valor</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaDespesas"></tbody>
+                </table>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

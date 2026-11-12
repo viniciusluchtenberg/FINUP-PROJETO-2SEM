@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    height: auto;
+}
+
+.main-content {
+    width: calc(100% - 100px);
+    max-width: 1800px;
+    margin-left: 100px;
+    padding: 24px;
+    min-width: 0;
+}
+
+.card-chart {
+    width: 100%;
+    height: 100%;
+}
+
+.chart-box {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    min-width: 0;
+}
+
+.chart-box canvas {
+    max-width: 100%;
+}
+
+#menuLateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    padding: 10px 0;
+    margin-top: 25px;
+    background-color: #ffffff;
+    border-right: 1px solid #dee2e6;
+    z-index: 1000;
+}
+
+.item-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 22px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.item-menu:hover,
+.item-menu.ativo {
+    background-color: #f1f5f9;
+    color: #2563eb;
+}
+
+#logo {
+    height: 150px;
+    width: auto;
+}
+
+.card {
+    border-radius: 10px;
+    height: 100%;
+}
+
+.card h4 {
+    font-size: 20px;
+}
+
+.tooltip-finup {
+    --bs-tooltip-bg: #f1f5f9;
+    --bs-tooltip-color: #2563eb;
+    --bs-tooltip-font-size: 1.1rem;
+}
