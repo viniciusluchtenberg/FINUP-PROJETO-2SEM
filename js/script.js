@@ -2,13 +2,43 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
 
 async function carregarGraficos() {
-    const dados = await carregarDados();            
+    const dados = await carregarDados();
     const valores = processarDados(dados);
 
     Chart.defaults.maintainAspectRatio = false;
 
     document.getElementById('valorSaldo').textContent =
-        valores.saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+        valores.saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    const ultimoIndice = valores.meses.length - 1;
+
+    const saldoAtual = valores.entradas[ultimoIndice] + valores.saidas[ultimoIndice];
+    const saldoAnterior = valores.entradas[ultimoIndice - 1] + valores.saidas[ultimoIndice - 1];
+    const elementoVariacao = document.getElementById('variacaoSaldo');
+    const elementoComparacao = document.getElementById('comparacaoMes');
+
+    const variacao = ((saldoAtual - saldoAnterior) / Math.abs(saldoAnterior)) * 100;
+
+    if (saldoAnterior !== 0) {
+        let sinal = '';
+
+        if (variacao > 0) {
+            sinal = '+';
+        }
+
+        elementoVariacao.textContent = sinal + variacao.toFixed(1) + '%';
+
+        if (variacao >= 0) {
+            elementoVariacao.className = 'fw-bold text-success';
+        } else {
+            elementoVariacao.className = 'fw-bold text-danger';
+        }
+
+    } else {
+        elementoVariacao.textContent = 'N/D';
+    }
+
+    elementoComparacao.textContent = 'Em relação a ' + valores.meses[ultimoIndice - 1];
 
     const ctx = document.getElementById('chartSaldo');
     const ctx1 = document.getElementById('chartCategorias');
@@ -48,7 +78,7 @@ async function carregarGraficos() {
             responsive: true,
             plugins: {
                 legend: {
-                    display: false,
+                    display: true,
                     position: 'left',
                 }
             }
@@ -58,7 +88,7 @@ async function carregarGraficos() {
     new Chart(ctx2, {
         type: 'bar',
         data: {
-            labels: dados.meses,
+            labels: valores.meses,
             datasets: [
                 {
                     label: 'Entradas',
@@ -66,8 +96,8 @@ async function carregarGraficos() {
                     backgroundColor: '#45B7D1',
                 },
                 {
-                    label: 'Despesas',
-                    data: valores.despesas,
+                    label: 'Saídas',
+                    data: valores.saidas,
                     backgroundColor: '#FF6B6B',
                 }
             ]

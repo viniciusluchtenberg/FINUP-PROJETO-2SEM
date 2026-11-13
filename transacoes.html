@@ -24,18 +24,18 @@
 
         <nav class="nav flex-column align-items-center gap-3">
 
-            <a href="index.html" class="item-menu ativo" data-bs-toggle="tooltip" data-bs-placement="right"
+            <a href="index.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Dashboard">
                 <i class="bi bi-house"></i>
             </a>
 
-            <a href="transacoes.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
+            <a href="transacoes.html" class="item-menu ativo" data-bs-toggle="tooltip" data-bs-placement="right"
                 data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Transações">
                 <i class="bi bi-arrow-left-right"></i>
             </a>
 
             <a href="receitas.html" class="item-menu" data-bs-toggle="tooltip" data-bs-placement="right"
-                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Receitas">
+                data-bs-container="body" data-bs-custom-class="tooltip-finup" data-bs-title="Entradas">
                 <i class="bi bi-graph-up-arrow"></i>
             </a>
 
@@ -52,51 +52,15 @@
 
         <div class="d-flex justify-content-between align-items-center mb-4">
             <div>
-                <h3 class="fw-bold mb-1">Despesas</h3>
+                <h3 class="fw-bold mb-1">Transações</h3>
                 <p class="text-secondary mb-0">
-                    Acompanhe e gerencie seus gastos.
+                    Acompanhe e gerencie suas transações.
                 </p>
             </div>
 
             <div class="text-end">
-                <h4 class="text-secondary">Saldo Disponível:</h4>
+                <span class="text-secondary">Saldo Disponível:</span>
                 <span id="valorSaldo" class="text-secondary text-dark fw-medium"></span>
-            </div>
-
-        </div>
-
-        <div class="row g-3 mb-4">
-
-            <div class="col-6 col-lg-3">
-                <div class="card border-0 shadow-sm p-3">
-                    <span class="card-title text-secondary">Total de despesas</span>
-                    <h4 class="fw-bold mt-2">R$ 1.254,08</h4>
-                    <span class="text-secondary small">Neste mês</span>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3">
-                <div class="card border-0 shadow-sm p-3">
-                    <span class="card-title text-secondary">Despesas fixas</span>
-                    <h4 class="fw-bold mt-2">R$ 750,00</h4>
-                    <span class="card-title text-secondary">Contas recorrentes</span>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3">
-                <div class="card border-0 shadow-sm p-3">
-                    <span class="text-secondary small">Despesas variáveis</span>
-                    <h4 class="fw-bold mt-2">R$ 504,08</h4>
-                    <span class="text-secondary small">Gastos do dia a dia</span>
-                </div>
-            </div>
-
-            <div class="col-6 col-lg-3">
-                <div class="card border-0 shadow-sm p-3">
-                    <span class="text-secondary small">Média diária</span>
-                    <h4 class="fw-bold mt-2">R$ 40,45</h4>
-                    <span class="text-secondary small">Gasto por dia</span>
-                </div>
             </div>
 
         </div>
@@ -105,18 +69,18 @@
 
             <div class="col-12 col-lg-5">
                 <div class="card border-0 shadow-sm p-3 h-100">
-                    <h6 class="card-title text-secondary">Despesas por categoria</h6>
+                    <h6 class="card-title text-secondary">Maior Qnt de Transações</h6>
                     <div class="chart-box">
-                        <canvas id="graficoCategorias"></canvas>
+                        <canvas id="graficoTransacoes"></canvas>
                     </div>
                 </div>
             </div>
 
             <div class="col-12 col-lg-7">
                 <div class="card border-0 shadow-sm p-3 h-100">
-                    <h6 class="card-title text-secondary">Evolução das despesas</h6>
+                    <h6 class="card-title text-secondary">Evolução das Saídas</h6>
                     <div class="chart-box">
-                        <canvas id="graficoEvolucao"></canvas>
+                        <canvas id="graficoEvolucaoTransacoes"></canvas>
                     </div>
                 </div>
             </div>
@@ -126,26 +90,21 @@
         <div class="card border-0 shadow-sm p-3">
 
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h6 class="fw-bold mb-0">Últimas despesas</h6>
-
-                <button class="btn btn-outline-dark btn-sm">
-                    Ver todas
-                </button>
+                <h6 class="fw-bold mb-0">Últimas Movimentações</h6>
             </div>
 
             <div class="table-responsive">
-                <table class="table align-middle">
+                <table class="table align-middle table-hover">
                     <thead>
                         <tr class="text-secondary">
                             <th>Descrição</th>
-                            <th>Categoria</th>
-                            <th>Data</th>
                             <th>Tipo</th>
-                            <th class="text-end">Valor</th>
+                            <th>Data</th>
+                            <th class="text-end ">Valor</th>
                         </tr>
                     </thead>
 
-                    <tbody id="listaDespesas"></tbody>
+                    <tbody id="listaTransacoes"></tbody>
                 </table>
             </div>
 
@@ -153,7 +112,8 @@
 
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/transacoes.js"></script>
 
 </body>
 

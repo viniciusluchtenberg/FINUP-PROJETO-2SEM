@@ -16,20 +16,20 @@ function totalDe(lista) {
 
 function processarDados(dados) {
     const entradas = [];
-    const despesas = [];
+    const saidas = [];
     const evolucaoSaldo = [];
     let saldo = 0;
 
     for (let i = 0; i < dados.meses.length; i++) {
         const mes = dados[MESES[i]];
-        const receita = totalDe(mes.receitas);
-        const despesa = totalDe(mes.despesas);
-
+        const receita = totalDe(mes.entradas);
+        const despesa = totalDe(mes.saidas);
+        
         saldo = Number((saldo + receita - despesa).toFixed(2));
 
         entradas.push(receita);
-        despesas.push(-despesa);
-        evolucaoSaldo.push(saldo)
+        saidas.push(-despesa);
+        evolucaoSaldo.push(saldo);
     }
 
     const ultimoMes = dados[MESES[dados.meses.length - 1]];
@@ -38,8 +38,22 @@ function processarDados(dados) {
         saldo: saldo,
         meses: dados.meses,
         entradas: entradas,
-        despesas: despesas,
+        saidas: saidas,
         evolucaoSaldo: evolucaoSaldo,
-        categorias: ultimoMes.despesas,
+        categorias: ultimoMes.saidas,
+        categoriasEntradas: ultimoMes.entradas,
     };
+}
+
+function totaisMesVigente(dados) {
+    const mesAtual = MESES[new Date().getMonth()];
+    const mesVigente = dados[mesAtual];
+    const entradas = totalDe(mesVigente.entradas);
+    const saidas = totalDe(mesVigente.saidas);
+
+    return {
+        saidas: saidas,
+        entradas: entradas,
+        saldoMesAtual: Number((entradas - saidas).toFixed(2))
+    }
 }

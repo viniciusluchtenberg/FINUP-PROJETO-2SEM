@@ -13,7 +13,7 @@
         "Nov"
     ],
     "janeiro": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -23,7 +23,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 960.21
@@ -44,54 +44,10 @@
                 "nome": "Saneamento",
                 "valor": 95.98
             }
-        ],
-        "transacoes": [
-            {
-                "tipo": "Alimentação",
-                "lugar": "Supermercado Machado",
-                "Data": "08/11/2026",
-                "valor": 200.0
-            },
-            {
-                "tipo": "Alimentação",
-                "lugar": "Assaí Atacadista",
-                "Data": "05/11/2026",
-                "valor": 200.0
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Posto Bigatão",
-                "Data": "10/11/2026",
-                "valor": 150.0
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Uber",
-                "Data": "09/11/2026",
-                "valor": 50.0
-            },
-            {
-                "tipo": "Aluguel",
-                "lugar": "Vinicius Luchtenberg Pagnussat",
-                "Data": "29/10/2026",
-                "valor": 1000.0
-            },
-            {
-                "tipo": "Energia",
-                "lugar": "Energisa",
-                "Data": "30/10/2026",
-                "valor": 300.0
-            },
-            {
-                "tipo": "Saneamento",
-                "lugar": "Águas de Sinop",
-                "Data": "31/10/2026",
-                "valor": 150.0
-            }
         ]
     },
     "fevereiro": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -101,7 +57,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 959.67
@@ -125,7 +81,7 @@
         ]
     },
     "marco": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -135,7 +91,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1056.2
@@ -159,7 +115,7 @@
         ]
     },
     "abril": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -169,7 +125,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1026.36
@@ -193,7 +149,7 @@
         ]
     },
     "maio": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -203,7 +159,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 979.07
@@ -227,7 +183,7 @@
         ]
     },
     "junho": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -237,7 +193,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1035.47
@@ -261,7 +217,7 @@
         ]
     },
     "julho": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -271,7 +227,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1061.27
@@ -295,7 +251,7 @@
         ]
     },
     "agosto": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -305,7 +261,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1056.49
@@ -329,7 +285,7 @@
         ]
     },
     "setembro": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -339,7 +295,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1016.2
@@ -363,7 +319,7 @@
         ]
     },
     "outubro": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -373,7 +329,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 1013.48
@@ -397,7 +353,7 @@
         ]
     },
     "novembro": {
-        "receitas": [
+        "entradas": [
             {
                 "nome": "Salário",
                 "valor": 3500.0
@@ -407,7 +363,7 @@
                 "valor": 450.0
             }
         ],
-        "despesas": [
+        "saidas": [
             {
                 "nome": "Aluguel",
                 "valor": 955.56
@@ -427,6 +383,62 @@
             {
                 "nome": "Saneamento",
                 "valor": 146.24
+            }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Vinicius Luchtenberg Pagnussat",
+                "Data": "03/11/2026",
+                "valor": 955.56
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "05/11/2026",
+                "valor": 200.00
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "05/11/2026",
+                "valor": 146.24
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "07/11/2026",
+                "valor": 519.71
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "08/11/2026",
+                "valor": 1238.65
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "09/11/2026",
+                "valor": 20.00
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "10/11/2026",
+                "valor": 200.00
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "12/11/2026",
+                "valor": 64.71
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "13/11/2026",
+                "valor": 200.00
             }
         ]
     }
