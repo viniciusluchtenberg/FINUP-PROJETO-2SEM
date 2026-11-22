@@ -79,22 +79,22 @@
                 <div class="card border-0 shadow-sm p-3">
                     <span class="card-title text-secondary">Saídas fixas</span>
                     <h4 id="saidasFixas" class="fw-bold mt-2"></h4>
-                    <span class="card-title text-secondary">Contas recorrentes</span>
+                    <span class="text-secondary small">Neste mês</span>
                 </div>
             </div>
 
             <div class="col-6 col-lg-3">
                 <div class="card border-0 shadow-sm p-3">
-                    <span class="text-secondary small">Saídas variáveis</span>
+                    <span class="card-title text-secondary">Saídas variáveis</span>
                     <h4 id="saidaVariavel" class="fw-bold mt-2"></h4>
-                    <span class="text-secondary small">Gastos do dia a dia</span>
+                    <span class="text-secondary small">Neste mês</span>
                 </div>
             </div>
 
             <div class="col-6 col-lg-3">
                 <div class="card border-0 shadow-sm p-3">
-                    <span class="text-secondary small">Média diária</span>
-                    <h4 id="mediaSaida" class="fw-bold mt-2">R$ 40,45</h4>
+                    <span class="card-title text-secondary">Média diária</span>
+                    <h4 id="mediaSaida" class="fw-bold mt-2"></h4>
                     <span class="text-secondary small">Gasto por dia</span>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                 <div class="card border-0 shadow-sm p-3 h-100">
                     <h6 class="card-title text-secondary">Saídas por categoria</h6>
                     <div class="chart-box">
-                        <canvas id="graficoCategorias"></canvas>
+                        <canvas id="chartCategorias"></canvas>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
                 <div class="card border-0 shadow-sm p-3 h-100">
                     <h6 class="card-title text-secondary">Evolução das Saídas</h6>
                     <div class="chart-box">
-                        <canvas id="graficoEvolucao"></canvas>
+                        <canvas id="chartEvolucao"></canvas>
                     </div>
                 </div>
             </div>
@@ -134,7 +134,6 @@
                     <thead>
                         <tr class="text-secondary">
                             <th>Descrição</th>
-                            <th>Tipo</th>
                             <th>Data</th>
                             <th class="text-end ">Valor</th>
                         </tr>

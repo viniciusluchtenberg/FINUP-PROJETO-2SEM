@@ -2,21 +2,65 @@ const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]
 const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
 
 async function carregarSaidas() {
-    const dados = await carregarDados();            
-    const valores = processarDados(dados);    
+    const dados = await carregarDados();
+    const valores = processarDados(dados);
     const totaisMesAtual = totaisMesVigente(dados);
 
+    const listaSaidas = document.getElementById('listaSaidas');
+
+    const ultimoMes = MESES[dados.meses.length - 1];
+    const saidas = dados[ultimoMes].transacoes || [];
+
+    const ultimasSaidas = saidas.slice(-5).reverse();
+
+    listaSaidas.innerHTML = '';
+
+    for (const saida of ultimasSaidas) {
+        const linha = document.createElement('tr');
+
+        linha.innerHTML = `<td>${saida.lugar}</td>
+        <td>${saida.Data}</td>
+        <td class="text-end">
+            ${Number(saida.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}
+        </td>`;
+
+        listaSaidas.appendChild(linha);
+    }
+
     Chart.defaults.maintainAspectRatio = false;
+
+    const nomesSaidasFixas = ['Aluguel', 'Energia', 'Saneamento'];
+
+    const saidasFixas = valores.categorias
+        .filter(item => nomesSaidasFixas.includes(item.nome))
+        .reduce((total, item) => total + item.valor, 0);
+
+    const saidasVariaveis = valores.categorias
+        .filter(item => !nomesSaidasFixas.includes(item.nome))
+        .reduce((total, item) => total + item.valor, 0);
+
+    const diasMes = new Date(2026, dados.meses.length, 0).getDate();
+
+    const mediaSaida = totaisMesAtual.saidas / diasMes;
 
     document.getElementById('valorSaldo').textContent =
         valores.saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
     document.getElementById('totalSaidas').textContent =
         totaisMesAtual.saidas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
-    
-    const ctx = document.getElementById('graficoCategorias');
-    const ctx1 = document.getElementById('graficoEvolucao');
-    
+
+    document.getElementById('saidasFixas').textContent =
+        saidasFixas.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    document.getElementById('saidaVariavel').textContent =
+        saidasVariaveis.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    document.getElementById('mediaSaida').textContent =
+        mediaSaida.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+    const ctx = document.getElementById('chartCategorias');
+    const ctx1 = document.getElementById('chartEvolucao');
+
     new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -53,7 +97,7 @@ async function carregarSaidas() {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        callback: function(value) {
+                        callback: function (value) {
                             return 'R$ ' + value;
                         }
                     }

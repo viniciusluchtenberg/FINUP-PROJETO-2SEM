@@ -10,40 +10,30 @@ async function carregarGraficos() {
     document.getElementById('valorSaldo').textContent =
         valores.saldo.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
-    const ultimoIndice = valores.meses.length - 1;
+    const gastosPorEstabelecimento = {};
 
-    const saldoAtual = valores.entradas[ultimoIndice] + valores.saidas[ultimoIndice];
-    const saldoAnterior = valores.entradas[ultimoIndice - 1] + valores.saidas[ultimoIndice - 1];
-    const elementoVariacao = document.getElementById('variacaoSaldo');
-    const elementoComparacao = document.getElementById('comparacaoMes');
+    for (const nomeMes of dados.meses) {
+        const mes = MESES[dados.meses.indexOf(nomeMes)];
+        const transacoes = dados[mes]?.transacoes || [];
 
-    const variacao = ((saldoAtual - saldoAnterior) / Math.abs(saldoAnterior)) * 100;
+        for (const transacao of transacoes) {
+            const lugar = transacao.lugar;
 
-    if (saldoAnterior !== 0) {
-        let sinal = '';
+            if (gastosPorEstabelecimento[lugar] === undefined) {
+                gastosPorEstabelecimento[lugar] = 0;
+            }
 
-        if (variacao > 0) {
-            sinal = '+';
+            gastosPorEstabelecimento[lugar] += Number(transacao.valor);
         }
-
-        elementoVariacao.textContent = sinal + variacao.toFixed(1) + '%';
-
-        if (variacao >= 0) {
-            elementoVariacao.className = 'fw-bold text-success';
-        } else {
-            elementoVariacao.className = 'fw-bold text-danger';
-        }
-
-    } else {
-        elementoVariacao.textContent = 'N/D';
     }
 
-    elementoComparacao.textContent = 'Em relação a ' + valores.meses[ultimoIndice - 1];
+    const estabelecimentosOrdenados = Object.entries(gastosPorEstabelecimento)
+        .sort((a, b) => b[1] - a[1]);
 
     const ctx = document.getElementById('chartSaldo');
     const ctx1 = document.getElementById('chartCategorias');
     const ctx2 = document.getElementById('chartEntradas');
-    const ctx3 = document.getElementById('chartEconomia');
+    const ctx3 = document.getElementById('chartEstabelecimentos');
 
     new Chart(ctx, {
         type: 'line',
@@ -106,6 +96,40 @@ async function carregarGraficos() {
             responsive: true,
         }
     });
+    
+    new Chart(ctx3, {
+        type: 'bar',
+        data: {
+            labels: estabelecimentosOrdenados.map(item => item[0]),
+            datasets: [{
+                label: 'Total gasto',
+                data: estabelecimentosOrdenados.map(item => item[1]),
+                backgroundColor: '#45B7D1',
+                borderRadius: 5,
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function (valor) {
+                            return valor.toLocaleString('pt-BR', {
+                                style: 'currency',
+                                currency: 'BRL'
+                            });
+                        }
+                    }
+                }
+            }
+        }
+    });
 }
-
 carregarGraficos();

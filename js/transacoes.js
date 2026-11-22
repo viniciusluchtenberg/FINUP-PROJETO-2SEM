@@ -45,7 +45,8 @@ async function carregarTransacoes() {
 
     Chart.defaults.maintainAspectRatio = false;
 
-    const ctx = document.getElementById('graficoTransacoes');
+    const ctx = document.getElementById('chartTransacoes');
+    const ctx1 = document.getElementById('chartDespesasCategorias')
 
     new Chart(ctx, {
         type: 'bar',
@@ -54,7 +55,8 @@ async function carregarTransacoes() {
             datasets: [{
                 label: 'Quantidade de transações',
                 data: lugaresOrdenados.map(item => item[1]),
-                backgroundColor: ['#B3EBF2','#6fe2f2','#62c7d4', '#52a6b1', '#3e7d85']
+                backgroundColor: ['#B3EBF2', '#6fe2f2', '#62c7d4', '#52a6b1', '#3e7d85'],
+                borderRadius: 5,
             }]
         },
         options: {
@@ -71,6 +73,40 @@ async function carregarTransacoes() {
                     ticks: {
                         precision: 0,
                         stepSize: 1
+                    }
+                }
+            }
+        }
+    });
+    new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: valores.categorias.map(c => c.nome),
+            datasets: [{
+                label: 'Total gasto',
+                data: valores.categorias.map(c => c.valor),
+                backgroundColor: ['#B3EBF2', '#6FE2F2', '#62C7D4', '#52A6B1', '#3E7D85'],
+                borderRadius: 5,
+            }]
+        },
+        options: {
+            indexAxis: 'y',
+            responsive: true,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function (valor) {
+                            return valor.toLocaleString('pt-BR', {
+                                style: 'currency',
+                                currency: 'BRL'
+                            });
+                        }
                     }
                 }
             }

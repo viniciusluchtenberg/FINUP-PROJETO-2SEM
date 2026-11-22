@@ -79,14 +79,15 @@
                 <div class="card border-0 shadow-sm p-3">
                     <span class="card-title text-secondary">Entradas fixas</span>
                     <h4 id="entradasFixas" class="fw-bold mt-2"></h4>
-                    <span class="text-secondary small">Entradas Recorrentes</span>
+                    <span class="text-secondary small">Neste mês</span>
                 </div>
             </div>
 
             <div class="col-6 col-lg-3">
                 <div class="card border-0 shadow-sm p-3">
                     <span class="card-title text-secondary">Entradas variáveis</span>
-                    <h4 id="entradasVariaveis" class="fw-bold mt-2">102</h4>
+                    <h4 id="entradasVariaveis" class="fw-bold mt-2"></h4>
+                    <span class="text-secondary small">Neste mês</span>
                 </div>
             </div>
 
@@ -94,7 +95,7 @@
                 <div class="card border-0 shadow-sm p-3">
                     <span class="card-title text-secondary">Média diária</span>
                     <h4 id="mediaEntrada" class="fw-bold mt-2"></h4>
-                    <span class="text-secondary small">Quanto entra por dia</span>
+                    <span class="text-secondary small">Entradas por dia</span>
                 </div>
             </div>
 
@@ -106,7 +107,7 @@
                 <div class="card border-0 shadow-sm p-3 h-100">
                     <h6 class="card-title text-secondary">Entradas por categoria</h6>
                     <div class="chart-box">
-                        <canvas id="graficoCategoriasEntradas"></canvas>
+                        <canvas id="chartCategoriasEntradas"></canvas>
                     </div>
                 </div>
             </div>
@@ -115,7 +116,7 @@
                 <div class="card border-0 shadow-sm p-3 h-100">
                     <h6 class="card-title text-secondary">Evolução das Entradas</h6>
                     <div class="chart-box">
-                        <canvas id="graficoEvolucaoEntradas"></canvas>
+                        <canvas id="chartEvolucaoEntradas"></canvas>
                     </div>
                 </div>
             </div>
@@ -133,13 +134,12 @@
                     <thead>
                         <tr class="text-secondary">
                             <th>Descrição</th>
-                            <th>Tipo</th>
                             <th>Data</th>
                             <th class="text-end ">Valor</th>
                         </tr>
                     </thead>
 
-                    <tbody id="listaEntradas    "></tbody>
+                    <tbody id="listaEntradas"></tbody>
                 </table>
             </div>
 

@@ -13,14 +13,88 @@
         "Nov"
     ],
     "janeiro": {
-        "entradas": [
+        "transacoes": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/01/2026",
+                "valor": 960.21
             },
             {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/01/2026",
+                "valor": 234.89
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/01/2026",
+                "valor": 117.44
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/01/2026",
+                "valor": 528.51
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/01/2026",
+                "valor": 411.09
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/01/2026",
+                "valor": 119.91
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/01/2026",
+                "valor": 59.95
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/01/2026",
+                "valor": 269.82
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/01/2026",
+                "valor": 350.24
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/01/2026",
+                "valor": 95.98
+            }
+        ],
+        "entradas": [
+            {
                 "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "valor": 450.0,
+                "Data": "01/01/2026"
+            },
+            {
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/01/2026"
+            },
+            {
+                "nome": "Freelance",
+                "valor": 380.0,
+                "Data": "18/01/2026"
+            },
+            {
+                "nome": "Cashback",
+                "valor": 32.5,
+                "Data": "26/01/2026"
             }
         ],
         "saidas": [
@@ -49,12 +123,24 @@
     "fevereiro": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/02/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/02/2026"
+            },
+            {
+                "nome": "Horas extras",
+                "valor": 245.8,
+                "Data": "12/02/2026"
+            },
+            {
+                "nome": "Venda de produtos",
+                "valor": 190.0,
+                "Data": "23/02/2026"
             }
         ],
         "saidas": [
@@ -78,17 +164,86 @@
                 "nome": "Saneamento",
                 "valor": 103.26
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/02/2026",
+                "valor": 959.67
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/02/2026",
+                "valor": 407.99
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/02/2026",
+                "valor": 203.99
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/02/2026",
+                "valor": 917.98
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/02/2026",
+                "valor": 714.01
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/02/2026",
+                "valor": 146.61
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/02/2026",
+                "valor": 73.3
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/02/2026",
+                "valor": 329.88
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/02/2026",
+                "valor": 364.39
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/02/2026",
+                "valor": 103.26
+            }
         ]
     },
     "marco": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/03/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/03/2026"
+            },
+            {
+                "nome": "Comissão",
+                "valor": 520.0,
+                "Data": "15/03/2026"
             }
         ],
         "saidas": [
@@ -112,17 +267,91 @@
                 "nome": "Saneamento",
                 "valor": 164.77
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/03/2026",
+                "valor": 1056.2
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/03/2026",
+                "valor": 281.27
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/03/2026",
+                "valor": 140.63
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/03/2026",
+                "valor": 632.86
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/03/2026",
+                "valor": 492.24
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/03/2026",
+                "valor": 165.34
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/03/2026",
+                "valor": 82.67
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/03/2026",
+                "valor": 372.04
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/03/2026",
+                "valor": 267.59
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/03/2026",
+                "valor": 164.77
+            }
         ]
     },
     "abril": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/04/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/04/2026"
+            },
+            {
+                "nome": "Freelance",
+                "valor": 650.0,
+                "Data": "09/04/2026"
+            },
+            {
+                "nome": "Rendimentos",
+                "valor": 48.75,
+                "Data": "28/04/2026"
             }
         ],
         "saidas": [
@@ -146,17 +375,96 @@
                 "nome": "Saneamento",
                 "valor": 96.3
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/04/2026",
+                "valor": 1026.36
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/04/2026",
+                "valor": 431.39
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/04/2026",
+                "valor": 215.69
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/04/2026",
+                "valor": 970.62
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/04/2026",
+                "valor": 754.95
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/04/2026",
+                "valor": 105.77
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/04/2026",
+                "valor": 52.88
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/04/2026",
+                "valor": 238.02
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/04/2026",
+                "valor": 500.69
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/04/2026",
+                "valor": 96.3
+            }
         ]
     },
     "maio": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/05/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/05/2026"
+            },
+            {
+                "nome": "Venda de produtos",
+                "valor": 275.0,
+                "Data": "17/05/2026"
+            },
+            {
+                "nome": "Cashback",
+                "valor": 41.2,
+                "Data": "25/05/2026"
+            },
+            {
+                "nome": "Serviços autônomos",
+                "valor": 310.0,
+                "Data": "30/05/2026"
             }
         ],
         "saidas": [
@@ -180,17 +488,86 @@
                 "nome": "Saneamento",
                 "valor": 99.44
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/05/2026",
+                "valor": 979.07
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/05/2026",
+                "valor": 206.14
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/05/2026",
+                "valor": 103.07
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/05/2026",
+                "valor": 463.83
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/05/2026",
+                "valor": 360.77
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/05/2026",
+                "valor": 173.88
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/05/2026",
+                "valor": 86.94
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/05/2026",
+                "valor": 391.25
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/05/2026",
+                "valor": 414.27
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/05/2026",
+                "valor": 99.44
+            }
         ]
     },
     "junho": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/06/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/06/2026"
+            },
+            {
+                "nome": "Horas extras",
+                "valor": 185.5,
+                "Data": "14/06/2026"
             }
         ],
         "saidas": [
@@ -214,17 +591,91 @@
                 "nome": "Saneamento",
                 "valor": 153.47
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/06/2026",
+                "valor": 1035.47
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/06/2026",
+                "valor": 319.04
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/06/2026",
+                "valor": 159.52
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/06/2026",
+                "valor": 717.85
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/06/2026",
+                "valor": 558.34
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/06/2026",
+                "valor": 180.93
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/06/2026",
+                "valor": 90.46
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/06/2026",
+                "valor": 407.12
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/06/2026",
+                "valor": 432.18
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/06/2026",
+                "valor": 153.47
+            }
         ]
     },
     "julho": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/07/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/07/2026"
+            },
+            {
+                "nome": "Comissão",
+                "valor": 710.0,
+                "Data": "08/07/2026"
+            },
+            {
+                "nome": "Freelance",
+                "valor": 420.0,
+                "Data": "21/07/2026"
             }
         ],
         "saidas": [
@@ -248,17 +699,91 @@
                 "nome": "Saneamento",
                 "valor": 120.32
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/07/2026",
+                "valor": 1061.27
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/07/2026",
+                "valor": 427.96
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/07/2026",
+                "valor": 213.98
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/07/2026",
+                "valor": 962.93
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/07/2026",
+                "valor": 748.96
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/07/2026",
+                "valor": 149.77
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/07/2026",
+                "valor": 74.88
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/07/2026",
+                "valor": 337.0
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/07/2026",
+                "valor": 426.2
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/07/2026",
+                "valor": 120.32
+            }
         ]
     },
     "agosto": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/08/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/08/2026"
+            },
+            {
+                "nome": "Rendimentos",
+                "valor": 56.3,
+                "Data": "06/08/2026"
+            },
+            {
+                "nome": "Venda de produtos",
+                "valor": 340.0,
+                "Data": "19/08/2026"
             }
         ],
         "saidas": [
@@ -282,17 +807,86 @@
                 "nome": "Saneamento",
                 "valor": 107.55
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/08/2026",
+                "valor": 1056.49
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/08/2026",
+                "valor": 180.47
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/08/2026",
+                "valor": 90.23
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/08/2026",
+                "valor": 406.06
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/08/2026",
+                "valor": 315.84
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/08/2026",
+                "valor": 125.58
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/08/2026",
+                "valor": 62.79
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/08/2026",
+                "valor": 282.58
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/08/2026",
+                "valor": 531.31
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/08/2026",
+                "valor": 107.55
+            }
         ]
     },
     "setembro": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/09/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/09/2026"
+            },
+            {
+                "nome": "Bônus",
+                "valor": 850.0,
+                "Data": "10/09/2026"
             }
         ],
         "saidas": [
@@ -316,17 +910,91 @@
                 "nome": "Saneamento",
                 "valor": 123.27
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/09/2026",
+                "valor": 1016.2
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/09/2026",
+                "valor": 314.91
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/09/2026",
+                "valor": 157.45
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/09/2026",
+                "valor": 708.55
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/09/2026",
+                "valor": 551.12
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/09/2026",
+                "valor": 140.19
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/09/2026",
+                "valor": 70.09
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/09/2026",
+                "valor": 315.44
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/09/2026",
+                "valor": 546.22
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/09/2026",
+                "valor": 123.27
+            }
         ]
     },
     "outubro": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/10/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/10/2026"
+            },
+            {
+                "nome": "Freelance",
+                "valor": 560.0,
+                "Data": "13/10/2026"
+            },
+            {
+                "nome": "Horas extras",
+                "valor": 225.4,
+                "Data": "27/10/2026"
             }
         ],
         "saidas": [
@@ -350,17 +1018,96 @@
                 "nome": "Saneamento",
                 "valor": 95.22
             }
+        ],
+        "transacoes": [
+            {
+                "tipo": "Aluguel",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/10/2026",
+                "valor": 1013.48
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Supermercado Machado",
+                "Data": "04/10/2026",
+                "valor": 390.72
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/10/2026",
+                "valor": 195.36
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/10/2026",
+                "valor": 879.13
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/10/2026",
+                "valor": 683.79
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/10/2026",
+                "valor": 198.61
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/10/2026",
+                "valor": 99.3
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/10/2026",
+                "valor": 446.9
+            },
+            {
+                "tipo": "Energia",
+                "lugar": "Energisa",
+                "Data": "12/10/2026",
+                "valor": 364.52
+            },
+            {
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/10/2026",
+                "valor": 95.22
+            }
         ]
     },
     "novembro": {
         "entradas": [
             {
-                "nome": "Salário",
-                "valor": 3500.0
+                "nome": "Vale-Alimentação",
+                "valor": 450.0,
+                "Data": "01/11/2026"
             },
             {
-                "nome": "Vale-Alimentação",
-                "valor": 450.0
+                "nome": "Salário",
+                "valor": 3500.0,
+                "Data": "05/11/2026"
+            },
+            {
+                "nome": "Comissão",
+                "valor": 630.0,
+                "Data": "07/11/2026"
+            },
+            {
+                "nome": "Cashback",
+                "valor": 38.9,
+                "Data": "16/11/2026"
+            },
+            {
+                "nome": "Serviços autônomos",
+                "valor": 290.0,
+                "Data": "24/11/2026"
             }
         ],
         "saidas": [
@@ -388,57 +1135,63 @@
         "transacoes": [
             {
                 "tipo": "Aluguel",
-                "lugar": "Vinicius Luchtenberg Pagnussat",
-                "Data": "03/11/2026",
+                "lugar": "Pagamento de aluguel",
+                "Data": "05/11/2026",
                 "valor": 955.56
             },
             {
                 "tipo": "Alimentação",
-                "lugar": "Assaí Atacadista",
-                "Data": "05/11/2026",
-                "valor": 200.00
+                "lugar": "Supermercado Machado",
+                "Data": "04/11/2026",
+                "valor": 261.57
             },
             {
-                "tipo": "Saneamento",
-                "lugar": "Águas de Sinop",
-                "Data": "05/11/2026",
-                "valor": 146.24
+                "tipo": "Alimentação",
+                "lugar": "Assaí Atacadista",
+                "Data": "10/11/2026",
+                "valor": 130.78
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Atacadão",
+                "Data": "17/11/2026",
+                "valor": 588.53
+            },
+            {
+                "tipo": "Alimentação",
+                "lugar": "Mercado Modelo",
+                "Data": "24/11/2026",
+                "valor": 457.77
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Bigatão",
+                "Data": "04/11/2026",
+                "valor": 129.25
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Posto Shell",
+                "Data": "10/11/2026",
+                "valor": 64.62
+            },
+            {
+                "tipo": "Transporte",
+                "lugar": "Uber",
+                "Data": "17/11/2026",
+                "valor": 290.84
             },
             {
                 "tipo": "Energia",
                 "lugar": "Energisa",
-                "Data": "07/11/2026",
+                "Data": "12/11/2026",
                 "valor": 519.71
             },
             {
-                "tipo": "Alimentação",
-                "lugar": "Supermercado Machado",
-                "Data": "08/11/2026",
-                "valor": 1238.65
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Uber",
-                "Data": "09/11/2026",
-                "valor": 20.00
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Posto Bigatão",
-                "Data": "10/11/2026",
-                "valor": 200.00
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Uber",
-                "Data": "12/11/2026",
-                "valor": 64.71
-            },
-            {
-                "tipo": "Transporte",
-                "lugar": "Posto Bigatão",
-                "Data": "13/11/2026",
-                "valor": 200.00
+                "tipo": "Saneamento",
+                "lugar": "Águas de Sinop",
+                "Data": "18/11/2026",
+                "valor": 146.24
             }
         ]
     }
